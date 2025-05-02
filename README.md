@@ -7,19 +7,19 @@ Installatie:
 ------------
 * maak folder RCS aan in huidige foler
 
-*Voeg in hoofd folder twee key bestanden toe:
- + nsapi.key - access key van NS API 
- + fput.key - key voor ftp server (naam nu nog hard gecodeerd)
+* Voeg in hoofd folder twee key bestanden toe:
+    + nsapi.key - access key van NS API 
+    + fput.key - key voor ftp server (naam nu nog hard gecodeerd)
 
-* vroeg in beide scipts op de 2 regel het huidige pad in in plaats van ~/NSproj/trvolg/usnum
+* voeg in beide scipts op de 2 regel het huidige pad in in plaats van ~/NSproj/trvolg/usnum
 
 * Run dan eenmaal beide scripts en check goede output
- + ./chkdpnrs.sh
-   + op de web server hoort nu een daynrs.json,v te staan
- + ./mvdpnrs.sh
-   + in RCS hoort nu een daynrs.json,v te staan
+    + ./chkdpnrs.sh
+         + op de web server hoort nu een daynrs.json,v te staan
+    + ./mvdpnrs.sh
+         + in RCS hoort nu een daynrs.json,v te staan
 
-* installeer een crontab
+* installeer een crontab om het eerste script per kwartier en het tweede per dag te laten draaien
 <code>
 */15 * * * * /home/<path>/usnum/chkdpnrs.sh
 22 3 * * * /home/<path>/usnum/mvdpnrs.sh
