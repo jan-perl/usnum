@@ -22,6 +22,3 @@ installeer een crontab
 */15 * * * * /home/<path>/usnum/chkdpnrs.sh
 22 3 * * * /home/<path>/usnum/mvdpnrs.sh
 
-
-De versie historie in git is gemaakt uit de RCS versie history van de sh files via https://rsmith.home.xs4all.nl/problems/converting-rcs-history-to-git.html
-
