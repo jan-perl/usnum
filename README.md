@@ -15,9 +15,9 @@ Installatie:
 
 * Run dan eenmaal beide scripts en check goede output
     + ./chkdpnrs.sh
-         + op de web server hoort nu een daynrs.json,v te staan
+         +  om een output bestand te maken met alle treinen tot nu toe; op de web server hoort nu een daynrs.json,v te staan
     + ./mvdpnrs.sh
-         + in RCS hoort nu een daynrs.json,v te staan
+         +  om een nieuwe dagtelling te starten, in RCS hoort nu een daynrs.json,v te staan
 
 * installeer een crontab om het eerste script per kwartier en het tweede per dag te laten draaien
 <code>
